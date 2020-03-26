@@ -1,0 +1,18 @@
+<?php
+
+use App\Models\users;
+use Illuminate\Database\Seeder;
+
+class usersTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {   
+        //inisialisasi jumlah data yang akan di seed.
+        $users = factory(users::class, 735)->create();
+    }
+}
